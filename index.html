@@ -814,7 +814,7 @@ legend{font:700 14.5px var(--kop);color:var(--zwart-2);margin-bottom:8px}
   <div class="binnen v-grid">
     <a class="feit onthul" href="https://maps.google.com/?cid=12958308254249991269" target="_blank" rel="noopener">
       <span class="ic"><svg><use href="#i-ster"/></svg></span>
-      <div><b><span class="teller" data-doel="5" data-decimaal="1">5,0</span><span> / 5</span></b><small>op Google (2 reviews)</small></div>
+      <div><b><span class="teller" data-doel="5" data-decimaal="1">5,0</span><span> / 5</span></b><small>op Google</small></div>
     </a>
     <div class="feit onthul">
       <span class="ic"><svg><use href="#i-klok"/></svg></span>
@@ -1130,7 +1130,5 @@ f.querySelectorAll('input[name=kh3]').forEach(function(i){i.addEventListener('ch
 f.querySelectorAll('input[name=soort]').forEach(function(r){r.addEventListener('change',function(){if(r.checked){var k=f.querySelector('input[name=kh3][value="'+r.value+'"]');if(k&&!k.checked){k.checked=true;f.classList.remove('is-storing');p.hidden=true;}}});});
 document.addEventListener('click',function(e){var a=e.target.closest('[data-soort]');if(!a)return;setTimeout(function(){var s=f.querySelector('input[name=soort]:checked');if(s){var k=f.querySelector('input[name=kh3][value="'+s.value+'"]');if(k){k.checked=true;kies();}}},0);});
 kies();})();</script>
-<a class="storing-vast" href="tel:+31652373645" aria-label="Storing? Bel de storingsdienst: 06 52373645"><span class="sv-led" aria-hidden="true"></span><span>Storing? Bel de storingsdienst</span><b>06 52373645</b></a>
-<script>(function(){var s=document.querySelector(".storing-vast");if(!s)return;function t(){s.classList.toggle("toon",window.scrollY>window.innerHeight*0.8)}window.addEventListener("scroll",t,{passive:true});t();})();</script>
 </body>
 </html>
