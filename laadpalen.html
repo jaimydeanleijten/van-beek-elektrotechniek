@@ -543,6 +543,11 @@ legend{font:700 14.5px var(--kop);color:var(--zwart-2);margin-bottom:8px}
 @media (max-width:1060px){#aanvraag .aan-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-template-areas:"intro" "form" "contact"}}
 @media (max-width:560px){#offerteform > .veld:has(#f-plaats),#offerteform > #f-mail-veld{grid-column:1/-1}}
 
+/* Werkwijze: foto's i.p.v. schakelaars */
+.aut-foto{display:block;aspect-ratio:3/2;border-radius:10px;overflow:hidden;background:var(--tint)}
+.aut-foto img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:520px){.automaat{display:flex}.aut-foto{aspect-ratio:16/9}}
+
 /* ===== Meerdere pagina's ===== */
 .menu a[aria-current="page"],.paneel a[aria-current="page"]{color:var(--accent-d);box-shadow:inset 0 -2px 0 var(--accent)}
 .pagina-kop{background:linear-gradient(115deg,var(--nacht) 0%,var(--zwart-2) 60%,#22627a 100%);color:var(--wit);padding:clamp(40px,6vw,72px) 0 clamp(36px,5vw,56px);position:relative;overflow:hidden}
@@ -676,25 +681,25 @@ legend{font:700 14.5px var(--kop);color:var(--zwart-2);margin-bottom:8px}
       <div class="mk-rail" aria-hidden="true"></div>
       <ol class="mk-groepen" id="stappen">
         <li class="automaat">
-          <span class="aut-kop" aria-hidden="true"><span class="hendel"></span></span>
+          <span class="aut-foto"><img src="https://primary.jwwb.nl/public/q/h/g/temp-akzwadbkwebtmnkyedlg/20220624_163744-high.jpg?enable-io=true&width=600" width="600" height="400" loading="lazy" alt="De bus van Van Beek bij een woning"></span>
           <span class="aut-label">Groep 1</span>
           <h3>Contact</h3>
           <p>U belt, appt of vult het formulier in. Foto's helpen.</p>
         </li>
         <li class="automaat">
-          <span class="aut-kop" aria-hidden="true"><span class="hendel"></span></span>
+          <span class="aut-foto"><img src="https://primary.jwwb.nl/public/q/h/g/temp-akzwadbkwebtmnkyedlg/20230322_113116-high.jpg?enable-io=true&width=600" width="600" height="400" loading="lazy" alt="Bestaande meterkast, bekeken voor de offerte"></span>
           <span class="aut-label">Groep 2</span>
           <h3>Offerte</h3>
           <p>Een duidelijke offerte, zodat u vooraf weet wat er gebeurt.</p>
         </li>
         <li class="automaat">
-          <span class="aut-kop" aria-hidden="true"><span class="hendel"></span></span>
+          <span class="aut-foto"><img src="https://primary.jwwb.nl/public/q/h/g/temp-akzwadbkwebtmnkyedlg/20230131_101636-high.jpg?enable-io=true&width=600" width="600" height="400" loading="lazy" alt="Nieuwe leidingen en inbouwdozen tijdens het werk"></span>
           <span class="aut-label">Groep 3</span>
           <h3>Uitvoering</h3>
           <p>Volgens afspraak, volgens de geldende normen en met een nette afwerking.</p>
         </li>
         <li class="automaat">
-          <span class="aut-kop" aria-hidden="true"><span class="hendel"></span></span>
+          <span class="aut-foto"><img src="https://primary.jwwb.nl/public/q/h/g/temp-akzwadbkwebtmnkyedlg/img-20250626-wa0007-high.jpg?enable-io=true&width=600" width="600" height="400" loading="lazy" alt="Strak afgewerkte wandcontactdoos na oplevering"></span>
           <span class="aut-label">Groep 4</span>
           <h3>Oplevering</h3>
           <p>Een installatie die technisch in orde is en klaar voor de toekomst.</p>

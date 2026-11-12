@@ -543,6 +543,11 @@ legend{font:700 14.5px var(--kop);color:var(--zwart-2);margin-bottom:8px}
 @media (max-width:1060px){#aanvraag .aan-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-template-areas:"intro" "form" "contact"}}
 @media (max-width:560px){#offerteform > .veld:has(#f-plaats),#offerteform > #f-mail-veld{grid-column:1/-1}}
 
+/* Werkwijze: foto's i.p.v. schakelaars */
+.aut-foto{display:block;aspect-ratio:3/2;border-radius:10px;overflow:hidden;background:var(--tint)}
+.aut-foto img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:520px){.automaat{display:flex}.aut-foto{aspect-ratio:16/9}}
+
 /* ===== Meerdere pagina's ===== */
 .menu a[aria-current="page"],.paneel a[aria-current="page"]{color:var(--accent-d);box-shadow:inset 0 -2px 0 var(--accent)}
 .pagina-kop{background:linear-gradient(115deg,var(--nacht) 0%,var(--zwart-2) 60%,#22627a 100%);color:var(--wit);padding:clamp(40px,6vw,72px) 0 clamp(36px,5vw,56px);position:relative;overflow:hidden}
