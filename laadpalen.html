@@ -527,6 +527,22 @@ legend{font:700 14.5px var(--kop);color:var(--zwart-2);margin-bottom:8px}
 .dienst .foto{flex:none}
 .dienst .foto img{position:absolute;inset:0}
 
+/* ===== Contact/aanvraag: rustiger indeling ===== */
+#aanvraag .aan-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr);grid-template-rows:auto 1fr;grid-template-areas:"intro form" "contact form";column-gap:clamp(28px,4vw,64px);row-gap:28px;align-items:start}
+#aanvraag .aan-grid > .onthul:first-child{grid-area:intro}
+#aanvraag .form{grid-area:form;padding:clamp(22px,3vw,34px)}
+#aanvraag .contact-lijst{grid-area:contact;align-self:start;grid-template-columns:minmax(0,1fr);background:var(--tint-2);border:1px solid var(--lijn);border-radius:20px;padding:22px;gap:16px}
+#aanvraag .contact-lijst a{font-size:16px;overflow-wrap:anywhere}
+#aanvraag .contact-lijst li:has(a[href^="mailto"]) a{font-size:14.5px}
+#aanvraag .contact-lijst .knop.storing{margin-top:4px}
+#aanvraag .titel{font-size:clamp(30px,3.4vw,44px)}
+#offerteform{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:14px}
+#offerteform > *{grid-column:1/-1}
+#offerteform > .veld:has(#f-plaats),#offerteform > #f-mail-veld{grid-column:auto}
+#offerteform .knop[type=submit]{margin-top:6px}
+@media (max-width:1060px){#aanvraag .aan-grid{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-template-areas:"intro" "form" "contact"}}
+@media (max-width:560px){#offerteform > .veld:has(#f-plaats),#offerteform > #f-mail-veld{grid-column:1/-1}}
+
 /* ===== Meerdere pagina's ===== */
 .menu a[aria-current="page"],.paneel a[aria-current="page"]{color:var(--accent-d);box-shadow:inset 0 -2px 0 var(--accent)}
 .pagina-kop{background:linear-gradient(115deg,var(--nacht) 0%,var(--zwart-2) 60%,#22627a 100%);color:var(--wit);padding:clamp(40px,6vw,72px) 0 clamp(36px,5vw,56px);position:relative;overflow:hidden}
